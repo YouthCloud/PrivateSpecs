@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "6.0"
 
   s.source       = { :git => down_url, :tag => s.version.to_s }
-  s.source_files  = s.name + "/VEResource/src/**/*.{m,h}"
-  s.resources = s.name + "/VEResource/Images.xcassets/**/*.{png,jpg,jpeg,wav,xib,strings}"
+  s.source_files  = s.name + "/src/**/*.{m,h}"
+  s.resources = s.name + "/Images.xcassets/**/*.{png,jpg,jpeg,wav,xib,strings}"
   
   s.requires_arc = true
 
