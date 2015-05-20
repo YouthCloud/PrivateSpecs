@@ -13,6 +13,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "6.0"
 
   s.source       = { :git => "https://github.com/YouthCloud/CYToolKit.git", :tag => s.version.to_s }
-  s.source_files  = "CYToolKit/Category/**/*.{m,h}"  
   s.requires_arc = true
+
+  s.subspec 'Category' do |ss|
+    ss.source_files = 'CYToolKit/Category/**/*.{m,h}'
+  end
+   
+  s.subspec 'Utils' do |ss|
+    ss.source_files = 'CYToolKit/Utils/*.{m,h}'
+  end
 end
