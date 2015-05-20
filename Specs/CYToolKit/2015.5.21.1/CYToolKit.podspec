@@ -21,5 +21,6 @@ Pod::Spec.new do |s|
    
   s.subspec 'Utils' do |ss|
     ss.source_files = 'CYToolKit/Utils/*.{m,h}'
+    ss.framework = 'CoreTelephony'
   end
 end
